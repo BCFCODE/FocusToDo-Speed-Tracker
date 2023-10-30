@@ -11,6 +11,8 @@ Front-End Developers:
 # [©BCFCODEteam](https://github.com/BCFCODE)
 [Join our Telegram channel](https://t.me/BCFCODE) | [Follow on Instagram](https://www.instagram.com/bcfcodeteam/?igshid=MzRlODBiNWFlZA%3D%3D)
 
+<span style="color: yellow;">We are officially commencing the development of the FocusToDo Speed-Tracker App. This is an open-source and training project, and we invite you to join us in developing this project. You can start by creating your first issue, and all of your suggestions or contributions are welcome.</span>
+
 <p align="center">
   <a href="https://github.com/BCFCODE">
     <img src="assets/BCFCODE-LOGO.png" alt="BCFCODE LOGO">
