@@ -12,7 +12,9 @@ Front-End Developers:
 [Join our Telegram channel](https://t.me/BCFCODE) | [Follow on Instagram](https://www.instagram.com/bcfcodeteam/?igshid=MzRlODBiNWFlZA%3D%3D)
 
 <p align="center">
-  <img src="assets/BCFCODE-LOGO.png" alt="BCFCODE LOGO">
+  <a href="https://github.com/BCFCODE">
+    <img src="assets/BCFCODE-LOGO.png" alt="BCFCODE LOGO">
+  </a>
 </p>
 
 
