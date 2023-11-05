@@ -40,6 +40,20 @@ class Report1000h {
               "Sun Oct 29 2023 06:50:15 GMT+0330 (Iran Standard Time)",
           },
         ],
+        11: [
+          {
+            durationToReach: "9 Day(s)",
+            reach: 72000,
+            lastHpd: 111.11,
+            currentHpd: "",
+            lastHph: 4.63,
+            currentHph: "",
+            averageHpd: "",
+            averageHph: "",
+            dateOfMeasurement:
+              "Sun Nov 05 2023 14:55:38 GMT+0330 (Iran Standard Time)",
+          },
+        ],
       },
     };
 
@@ -53,7 +67,7 @@ class Report1000h {
     };
 
     this.hpdAvg = (lastHpd, currentNumberOfDaysToReach1000h) => {
-      const [msPerDay, msPerHour] = this.toMs(currentNumberOfDaysToReach1000h)
+      const [msPerDay, msPerHour] = this.toMs(currentNumberOfDaysToReach1000h);
       console.log(msPerDay, msPerHour); //Debug
       const currentHpd = +(1000 / currentNumberOfDaysToReach1000h);
       //this hardcode is last average hpd
@@ -71,14 +85,14 @@ class Report1000h {
     };
 
     this.hphAvg = (lastHph, currentNumberOfDaysToReach1000h) => {
-      const [msPerDay, msPerHour] = this.toMs(currentNumberOfDaysToReach1000h)
+      const [msPerDay, msPerHour] = this.toMs(currentNumberOfDaysToReach1000h);
       console.log(msPerDay, msPerHour); //Debug
       const currentHph = +(1000 / (currentNumberOfDaysToReach1000h * 24));
       //this hardcode is last average hpd
       const lastAverageHph = 5.0;
       const average = +((lastAverageHph + currentHph) / 2).toFixed(1);
       const hphDifference = (currentHph - lastHph).toFixed(2);
-    
+
       const differenceBetweenCurrentAndLastMothMessage =
         hphDifference >= lastHph
           ? `Congratulations! Our speed to reach 1000 hours has increased by ${hphDifference} hours per hour.`
@@ -110,5 +124,6 @@ class Report1000h {
 const report20231011 = new Report1000h();
 const report20231020 = new Report1000h();
 const report20231029 = new Report1000h();
+// const report20231105 = new Report1000h();
 
 console.log(report20231020.message);
