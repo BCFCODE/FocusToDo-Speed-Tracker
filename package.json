@@ -1,0 +1,15 @@
+{
+  "name": "FocusToDo",
+  "version": "1.0.0",
+  "description": "\"A simple app to measure the velocity of time and receive 1000 hours.\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "FocusToDo-Speed-Tracker"
+  },
+  "author": "BCFCODEteam",
+  "license": "MIT"
+}
