@@ -2,6 +2,12 @@
 
 "A simple app to measure the velocity of time and receive 1000 hours."
 
+# Dependencies: 
+Please these commands:<br> 
+npm install<br>
+npm install -D vitest<br>
+npm install @mui/x-charts<br>
+
 # Here is the list of developers working on this project:
 
 Front-End Developers:
@@ -20,10 +26,7 @@ Front-End Developers:
 </p>
 
 
-Run these commands: 
-npm install
-npm install -D vitest
-npm install @mui/x-charts
+
 
 
 
