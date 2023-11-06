@@ -11,5 +11,8 @@
     "url": "FocusToDo-Speed-Tracker"
   },
   "author": "BCFCODEteam",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@mui/x-charts": "^6.18.0"
+  }
 }

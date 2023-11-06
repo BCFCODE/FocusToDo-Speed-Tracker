@@ -20,6 +20,13 @@ Front-End Developers:
 </p>
 
 
+Run these commands: 
+npm install
+npm install -D vitest
+npm install @mui/x-charts
+
+
+
 
 
 
