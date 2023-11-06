@@ -3,7 +3,7 @@
 "A simple app to measure the velocity of time and receive 1000 hours."
 
 # Dependencies: 
-Please these commands:<br> 
+Please run these commands:<br> 
 npm install<br>
 npm install -D vitest<br>
 npm install @mui/x-charts<br>
