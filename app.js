@@ -11,9 +11,9 @@
 //     "Wed Oct 11 2023 20:27:18 GMT+0330 (Iran Standard Time)", <<<<<<<<<<<<
 // }
 
-
+const d = new Date()
 const dateOfMeasurement = () => {
-
+return d
 }
 
 export {dateOfMeasurement}
