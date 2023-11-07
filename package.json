@@ -4,7 +4,7 @@
   "description": "\"A simple app to measure the velocity of time and receive 1000 hours.\"",
   "main": "app.js",
   "scripts": {
-    "test": "vitest --verbose" 
+    "test": "vitest --verbose"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "@mui/x-charts": "^6.18.0"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
   }
 }
