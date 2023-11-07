@@ -4,7 +4,7 @@
   "description": "\"A simple app to measure the velocity of time and receive 1000 hours.\"",
   "main": "app.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest --verbose" 
   },
   "repository": {
     "type": "git",
