@@ -16,4 +16,9 @@ const dateOfMeasurement = () => {
   return d;
 };
 
+document.getElementById(
+  'getCurrentTime'
+).textContent = `>>> ourFocusToDo Group 1000h speed Report > Date of
+measurement: ${dateOfMeasurement()}`;
+
 export { dateOfMeasurement };
