@@ -13,38 +13,47 @@
 
 class Report1000h {
   constructor() {
+    this.dateOfMeasurement = document.getElementById('dateOfMeasurement');
     this.history = {
       2023: {
         11: [
           {
-            durationToReach: "7 Day(s)",
+            durationToReach: '7 Day(s)',
             reach: 72000,
-            lastHpd: "",
-            currentHpd: "",
-            lastHph: "",
-            currentHph: "",
-            averageHpd: "",
-            averageHph: "",
+            lastHpd: '',
+            currentHpd: '',
+            lastHph: '',
+            currentHph: '',
+            averageHpd: '',
+            averageHph: '',
             dateOfMeasurement:
-              "Sun Nov 05 2023 14:55:38 GMT+0330 (Iran Standard Time)",
-          },
-        ],
-      },
+              'Sun Nov 05 2023 14:55:38 GMT+0330 (Iran Standard Time)'
+          }
+        ]
+      }
     };
   }
 
+  getTime() {
+    return new Date();
+  }
+
   //implement render method
-  render() {}
+  render() {
+    this.dateOfMeasurement.innerText = `${this.getTime()}`;
+  }
 }
 
-const d = new Date();
-const dateOfMeasurement = () => {
-  return d;
-};
+const report1000h = new Report1000h(dateOfMeasurement);
+report1000h.render();
+// const d = new Date();
+// const dateOfMeasurement = () => {
+//   return d;
+// };
 
 //render
-document.getElementById(
-  "dateOfMeasurement"
-).innerText = `${dateOfMeasurement()}`;
+// document.getElementById(
+//   "dateOfMeasurement"
+// ).innerText = `${dateOfMeasurement()}`;
 
 // export { dateOfMeasurement };
