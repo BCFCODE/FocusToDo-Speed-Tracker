@@ -33,7 +33,7 @@ class Report1000h {
     };
   }
 
-  
+  //implement render method
   render() {}
 }
 
