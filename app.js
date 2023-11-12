@@ -24,6 +24,9 @@ const html = {
 class Report1000h {
   constructor() {}
 
+  
+  currentHpd() {}
+  
   render() {
     html.dateOfMeasurement.innerText = `${new Date()}`;
   }
