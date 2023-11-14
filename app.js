@@ -24,7 +24,11 @@ class Report1000h {
   constructor() {}
 
   currentHpd() {
-  
+    return [200, 0]
+  }
+
+  currentHph() {
+    return [8, 20]
   }
 
   // render() {
