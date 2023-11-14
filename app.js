@@ -24,7 +24,7 @@ class Report1000h {
   constructor() {}
 
   currentHpd() {
-   
+  
   }
 
   // render() {

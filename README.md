@@ -26,7 +26,7 @@ Tech Renaissance: Experience a renaissance of technology where creativity knows 
 BCFCODEteam is not just a place to code; it's a revolution. A revolution that celebrates diversity, creativity, and the unyielding spirit of tech enthusiasts. Your journey to greatness begins here, among the brightest minds and the most ambitious projects.
 
 <p align="center">
-  <a href="https://github.com/BCFCODE">
+  <a href="https://github.com/BCFCODEteam">
     <img src="assets/BCFCODE-LOGO.png" alt="BCFCODE LOGO">
   </a>
 </p>
