@@ -24,17 +24,17 @@ class Report1000h {
   constructor() {}
 
   currentHpd() {
-    return [200, 0]
+    return [200, 0];
   }
 
   currentHph() {
-    return [8, 20]
+    return [8, 20];
   }
 
   // render() {
   //   html.dateOfMeasurement.innerText = `${new Date()}`;
   // }
-
+ 
   save() {
     history[2023][11][0 /* this must be implemented dynamically */].dateOfMeasurement =
       new Date();
@@ -43,7 +43,7 @@ class Report1000h {
 
 const report11122023 = new Report1000h();
 // report11122023.render();
-// report11122023.save();
+report11122023.save();
 
 //This export is for testing purposes
 export { history, report11122023 };
