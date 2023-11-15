@@ -4,16 +4,16 @@ const history = {
       {
         durationToReach1000h: 5, //5 days
         reach: 73000,
-        lastHpd: "",
-        currentHpd: "",
-        lastHph: "",
-        currentHph: "",
-        averageHpd: "",
-        averageHph: "",
-        dateOfMeasurement: "",
-      },
-    ],
-  },
+        lastHpd: '',
+        currentHpd: '',
+        lastHph: '',
+        currentHph: '',
+        averageHpd: '',
+        averageHph: '',
+        dateOfMeasurement: ''
+      }
+    ]
+  }
 };
 
 // const html = {
@@ -23,18 +23,17 @@ const history = {
 class Report1000h {
   constructor() {}
 
-  currentHpd() {
-    return [200, 0];
-  }
-
-  currentHph() {
-    return [8, 20];
+  currentHpd(day) {
+    const minsPerDay = (1000 * 60) / day;
+    const remainingMins = minsPerDay % 24;
+    const hours = (minsPerDay - remainingMins) / 60;
+    return [hours, remainingMins];
   }
 
   // render() {
   //   html.dateOfMeasurement.innerText = `${new Date()}`;
   // }
- 
+
   save() {
     history[2023][11][0 /* this must be implemented dynamically */].dateOfMeasurement =
       new Date();
