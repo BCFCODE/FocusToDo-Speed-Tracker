@@ -1,0 +1,10 @@
+$background: black;
+
+body {
+  background-color: $background;
+  color: white;
+  font-size: 30px;
+}
+
+//run this command to compile scss to styles/styles.css:
+//command: node-sass index.scss -o styles

@@ -1,5 +1,5 @@
 const history = {
-  2023: {  
+  2023: {
     11: [
       {
         durationToReach1000h: 5, //5 days
@@ -43,8 +43,7 @@ class Report1000h {
   // }
 
   save() {
-    history[2023][11][0].dateOfMeasurement =
-      new Date();
+    history[2023][11][0].dateOfMeasurement = new Date();
     history[2023][11][0].currentHourPerDay = this.currentHourPerDay();
     history[2023][11][0].currentHourPerHour = this.currentHourPerHour();
   }
