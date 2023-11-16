@@ -4,16 +4,16 @@ const history = {
       {
         durationToReach1000h: 5, //5 days
         reach: 73000,
-        lastHpd: '',
-        currentHpd: '',
-        lastHph: '',
-        currentHph: '',
-        averageHpd: '',
-        averageHph: '',
-        dateOfMeasurement: ''
-      }
-    ]
-  }
+        lastHourPerDay: "",
+        currentHourPerDay: "",
+        lastHourPerHour: "",
+        currentHourPerHour: "",
+        averageHourPerDay: "",
+        averageHourPerHour: "",
+        dateOfMeasurement: "",
+      },
+    ],
+  },
 };
 
 // const html = {
@@ -23,11 +23,19 @@ const history = {
 class Report1000h {
   constructor() {}
 
-  currentHpd(day) {
-    const minsPerDay = (1000 * 60) / day;
+  currentHourPerDay() {
+    const minsPerDay = (1000 * 60) / history[2023][11][0].durationToReach1000h;
     const remainingMins = minsPerDay % 24;
     const hours = (minsPerDay - remainingMins) / 60;
     return [hours, remainingMins];
+  }
+
+  currentHourPerHour() {
+    const minsPerDay = (1000 * 60) / history[2023][11][0].durationToReach1000h;
+    const minsPerHour = minsPerDay / 24;
+    const remainingMinsPerHour = minsPerHour % 60;
+    const hours = (minsPerHour - remainingMinsPerHour) / 60;
+    return [hours, remainingMinsPerHour];
   }
 
   // render() {
@@ -37,6 +45,8 @@ class Report1000h {
   save() {
     history[2023][11][0 /* this must be implemented dynamically */].dateOfMeasurement =
       new Date();
+    history[2023][11][0].currentHourPerDay = this.currentHourPerDay();
+    history[2023][11][0].currentHourPerHour = this.currentHourPerHour();
   }
 }
 
