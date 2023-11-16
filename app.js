@@ -1,5 +1,5 @@
 const history = {
-  2023: {
+  2023: {  
     11: [
       {
         durationToReach1000h: 5, //5 days
