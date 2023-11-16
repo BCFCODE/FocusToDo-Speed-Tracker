@@ -43,7 +43,7 @@ class Report1000h {
   // }
 
   save() {
-    history[2023][11][0 /* this must be implemented dynamically */].dateOfMeasurement =
+    history[2023][11][0].dateOfMeasurement =
       new Date();
     history[2023][11][0].currentHourPerDay = this.currentHourPerDay();
     history[2023][11][0].currentHourPerHour = this.currentHourPerHour();
