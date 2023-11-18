@@ -1,10 +1,10 @@
-import history from "./src/database";
+import history from './src/database.js';
 
 const html = {
-  dateOfMeasurement,
+  dateOfMeasurement
 };
 
-html.dateOfMeasurement = document.getElementById("dateOfMeasurement");
+html.dateOfMeasurement = document.getElementById('dateOfMeasurement');
 class Report1000h {
   constructor() {}
 
