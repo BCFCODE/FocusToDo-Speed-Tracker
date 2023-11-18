@@ -4,11 +4,7 @@ const html = {
   dateOfMeasurement,
 };
 
-if (typeof document !== "undefined") {
-  html.dateOfMeasurement = document.getElementById("dateOfMeasurement");
-} else {
-  console.error("This code requires a browser environment with a DOM.");
-}
+html.dateOfMeasurement = document.getElementById("dateOfMeasurement");
 class Report1000h {
   constructor() {}
 
