@@ -1,41 +1,38 @@
-const history = {
-  2023: {
-    11: [
-      {
-        durationToReach1000h: 5, //5 days
-        reach: 73000,
-        lastHourPerDay: "",
-        currentHourPerDay: "",
-        lastHourPerHour: "",
-        currentHourPerHour: "",
-        averageHourPerDay: "",
-        averageHourPerHour: "",
-        dateOfMeasurement: "",
-      },
-    ],
-  },
-};
+// const history = {
+//   2023: {
+//     11: [
+//       {
+//         durationToReach1000h: 5, //5 days
+//         reach: 73000,
+//         lastHpd: '',
+//         currentHpd: '',
+//         lastHph: '',
+//         currentHph: '',
+//         averageHpd: '',
+//         averageHph: '',
+//         dateOfMeasurement: ''
+//       }
+//     ]
+//   }
+// };
 
 // const html = {
 //   dateOfMeasurement: document.getElementById("dateOfMeasurement"),
 // };
 
-class Report1000h {
-  constructor() {}
+const history = {};
 
-  currentHourPerDay() {
-    const minsPerDay = (1000 * 60) / history[2023][11][0].durationToReach1000h;
+class Report1000h {
+  constructor(durationToReach1000h) {
+    this.durationToReach1000h = durationToReach1000h;
+    this.now = new Date();
+  }
+
+  currentHpd() {
+    const minsPerDay = (1000 * 60) / this.durationToReach1000h;
     const remainingMins = minsPerDay % 24;
     const hours = (minsPerDay - remainingMins) / 60;
     return [hours, remainingMins];
-  }
-
-  currentHourPerHour() {
-    const minsPerDay = (1000 * 60) / history[2023][11][0].durationToReach1000h;
-    const minsPerHour = minsPerDay / 24;
-    const remainingMinsPerHour = minsPerHour % 60;
-    const hours = (minsPerHour - remainingMinsPerHour) / 60;
-    return [hours, remainingMinsPerHour];
   }
 
   // render() {
@@ -43,15 +40,27 @@ class Report1000h {
   // }
 
   save() {
-    history[2023][11][0].dateOfMeasurement = new Date();
-    history[2023][11][0].currentHourPerDay = this.currentHourPerDay();
-    history[2023][11][0].currentHourPerHour = this.currentHourPerHour();
+    history[this.now.getFullYear()] = {
+      [this.now.getMonth() + 1]: {
+        [this.now.getDate()]: {
+          durationToReach1000h: this.durationToReach1000h,
+          reach: '',
+          lastHpd: '',
+          currentHpd: this.currentHpd(),
+          lastHph: '',
+          currentHph: '',
+          averageHpd: '',
+          averageHph: '',
+          dateOfMeasurement: ''
+        }
+      }
+    };
   }
 }
 
-const report11122023 = new Report1000h();
+const report11122023 = new Report1000h(5);
 // report11122023.render();
-report11122023.save();
-
+const save = report11122023.save();
+console.log(history);
 //This export is for testing purposes
-export { history, report11122023 };
+// export { history, report11122023 };
