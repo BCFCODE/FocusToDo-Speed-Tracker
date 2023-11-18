@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import * as functions from "./app";
+import * as functions from "./index";
 
 describe("Database", () => {
   const d = new Date();

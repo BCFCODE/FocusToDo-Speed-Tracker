@@ -1,20 +1,4 @@
-const history = {
-  2023: {
-    11: [
-      {
-        durationToReach1000h: 5, //5 days
-        reach: 73000,
-        lastHourPerDay: "",
-        currentHourPerDay: "",
-        lastHourPerHour: "",
-        currentHourPerHour: "",
-        averageHourPerDay: "",
-        averageHourPerHour: "",
-        dateOfMeasurement: "",
-      },
-    ],
-  },
-};
+import history from "./src/database";
 
 // const html = {
 //   dateOfMeasurement: document.getElementById("dateOfMeasurement"),
