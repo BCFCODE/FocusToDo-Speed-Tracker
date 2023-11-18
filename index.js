@@ -1,9 +1,14 @@
 import history from "./src/database";
 
-// const html = {
-//   dateOfMeasurement: document.getElementById("dateOfMeasurement"),
-// };
+const html = {
+  dateOfMeasurement,
+};
 
+if (typeof document !== "undefined") {
+  html.dateOfMeasurement = document.getElementById("dateOfMeasurement");
+} else {
+  console.error("This code requires a browser environment with a DOM.");
+}
 class Report1000h {
   constructor() {}
 
@@ -22,9 +27,9 @@ class Report1000h {
     return [hours, remainingMinsPerHour];
   }
 
-  // render() {
-  //   html.dateOfMeasurement.innerText = `${new Date()}`;
-  // }
+  render() {
+    html.dateOfMeasurement.textContent = `${new Date()}`;
+  }
 
   save() {
     history[2023][11][0].dateOfMeasurement = new Date();
@@ -34,8 +39,8 @@ class Report1000h {
 }
 
 const report11122023 = new Report1000h();
-// report11122023.render();
+report11122023.render();
 report11122023.save();
 
 //This export is for testing purposes
-export { history, report11122023 };
+// export { history, report11122023 };
