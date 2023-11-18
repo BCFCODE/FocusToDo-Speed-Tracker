@@ -1,10 +1,9 @@
-import history from './src/database.js';
+import history from "./src/database.js";
 
-const html = {
-  dateOfMeasurement
-};
+// const html = {
+//   dateOfMeasurement: document.getElementById("dateOfMeasurement"),
+// };
 
-html.dateOfMeasurement = document.getElementById('dateOfMeasurement');
 class Report1000h {
   constructor() {}
 
@@ -23,9 +22,9 @@ class Report1000h {
     return [hours, remainingMinsPerHour];
   }
 
-  render() {
-    html.dateOfMeasurement.textContent = `${new Date()}`;
-  }
+  // render() {
+  //   html.dateOfMeasurement.textContent = `${new Date()}`;
+  // }
 
   save() {
     history[2023][11][0].dateOfMeasurement = new Date();
@@ -35,8 +34,8 @@ class Report1000h {
 }
 
 const report11122023 = new Report1000h();
-report11122023.render();
+// report11122023.render();
 report11122023.save();
 
 //This export is for testing purposes
-// export { history, report11122023 };
+export { history, report11122023 };
