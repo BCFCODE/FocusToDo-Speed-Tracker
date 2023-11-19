@@ -5,19 +5,20 @@ const history = {
         durationToReach1000h: 5, //5 days
         reach: 73000,
         lastHourPerDay: "",
-        currentHourPerDay: "",
+        currentHourPerDay: [200, 0],
         lastHourPerHour: "",
-        currentHourPerHour: "",
+        currentHourPerHour: [8, 20],
         averageHourPerDay: "",
         averageHourPerHour: "",
-        dateOfMeasurement: "",
+        dateOfMeasurement:
+          "Sun Nov 19 2023 23:00:30 GMT+0330 (Iran Standard Time)",
       },
       {
-        durationToReach1000h: 6, 
+        durationToReach1000h: 6,
         reach: 74000,
-        lastHourPerDay: "",
+        lastHourPerDay: [200, 0],
         currentHourPerDay: "",
-        lastHourPerHour: "",
+        lastHourPerHour: [8, 20],
         currentHourPerHour: "",
         averageHourPerDay: "",
         averageHourPerHour: "",
@@ -27,4 +28,4 @@ const history = {
   },
 };
 
-export default history
+export default history;
