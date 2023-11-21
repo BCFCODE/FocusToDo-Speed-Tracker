@@ -6,7 +6,7 @@ import history from "./src/database.js";
 
 class Report1000h {
   constructor() {
-
+    this.date = ''
   }
 
   currentHourPerDay() {
