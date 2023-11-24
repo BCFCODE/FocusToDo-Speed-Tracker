@@ -46,9 +46,11 @@ class Report1000h {
 
 const report11122023 = new Report1000h();
 const report11172023 = new Report1000h();
+const report11242023 = new Report1000h();
 // report11122023.render();
 report11122023.save();
 report11172023.save();
+report11242023.save();
 
 //This export is for testing purposes
-export { history, report11122023 , report11172023};
+export { history, report11122023 , report11172023, report11242023};
