@@ -1,4 +1,4 @@
-const history = {
+const History = {
   2023: {
     11: [
       {
@@ -38,5 +38,5 @@ const history = {
     ],
   },
 };
-
-export default history;
+   
+export default History;
