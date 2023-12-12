@@ -15,7 +15,7 @@ class Report1000h {
     const hours = (minsPerDay - remainingMins) / 60;
     return [hours, remainingMins];
   }
-   
+
   currentHourPerHour() {
     const minsPerDay = (1000 * 60) / history[2023][11][0].durationToReach1000h;
     const minsPerHour = minsPerDay / 24;
@@ -29,12 +29,12 @@ class Report1000h {
   }
 
   averageHourPerHour() {
-    
+
   }
 
-  // render() {
-  //   html.dateOfMeasurement.textContent = `${new Date()}`;
-  // }
+  render() {
+    html.dateOfMeasurement.textContent = `${new Date()}`;
+  }
 
   save() {
     //Hint: for this problem [2023][11][0] must implemented dynamically
@@ -53,4 +53,4 @@ report11172023.save();
 report11242023.save();
 
 //This export is for testing purposes
-export { history, report11122023 , report11172023, report11242023};
+export { history, report11122023, report11172023, report11242023 };
