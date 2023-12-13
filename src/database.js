@@ -36,6 +36,19 @@ const history = {
         dateOfMeasurement: "Fri Nov 24 2023 23:12:53 GMT+0330 (Iran Standard Time)",
       },
     ],
+    12: [
+      {
+        durationToReach1000h: 8,
+        reach: 78000,
+        lastHourPerDay: "",
+        currentHourPerDay: "",
+        lastHourPerHour: "",
+        currentHourPerHour: "",
+        averageHourPerDay: "",
+        averageHourPerHour: "",
+        dateOfMeasurement: "Wed Dec 13 2023 12:17:21 GMT+0330 (Iran Standard Time)",
+      },
+    ]
   },
 };
 
