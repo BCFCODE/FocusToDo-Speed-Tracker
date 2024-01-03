@@ -10,8 +10,7 @@ const history = {
         currentHourPerHour: [8, 20],
         averageHourPerDay: "",
         averageHourPerHour: "",
-        dateOfMeasurement:
-          "Sun Nov 19 2023 23:00:30 GMT+0330 (Iran Standard Time)",
+        dateOfMeasurement: "Sun Nov 19 2023 23:00:30 GMT+0330 (Iran Standard Time)",
       },
       {
         durationToReach1000h: 6,
@@ -58,6 +57,17 @@ const history = {
         averageHourPerDay: "",
         averageHourPerHour: "",
         dateOfMeasurement: "Mon Dec 18 2023 11:28:40 GMT+0330 (Iran Standard Time)",
+      },
+      {
+        durationToReach1000h: 8,
+        reach: 80000,
+        lastHourPerDay: "",
+        currentHourPerDay: "",
+        lastHourPerHour: "",
+        currentHourPerHour: "",
+        averageHourPerDay: "",
+        averageHourPerHour: "",
+        dateOfMeasurement: "Tue Dec 26 2023 06:43:37 GMT+0330 (Iran Standard Time)",
       },
     ]
   },

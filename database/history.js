@@ -61,6 +61,22 @@ const History = {
       },
     ],
   },
+  2024: {
+    1: [
+      {
+        durationToReach1000h: 7, 
+        reach: 81000,
+        lastHourPerDay: "",
+        currentHourPerDay: "",
+        lastHourPerHour: "",
+        currentHourPerHour: "",
+        averageHourPerDay: "",
+        averageHourPerHour: "",
+        dateOfMeasurement:
+          "Thu Jan 04 2024 00:01:53 GMT+0330 (Iran Standard Time)",
+      }
+    ]
+  }
 };
    
 export default History;
